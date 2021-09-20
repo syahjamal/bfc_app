@@ -1,4 +1,5 @@
 import 'package:bfc_app/screen/home.dart';
+import 'package:bfc_app/screen/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -28,7 +29,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       theme: _createTheme(),
       routes: {
-        '/' : (context) => const HomeScreen(),
+        '/' : (context) => const SplashScreen(),
+        '/home' : (context) => const HomeScreen(),
     },
     );
   }
